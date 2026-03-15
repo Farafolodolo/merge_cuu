@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { MapPin, Calendar, Trophy, Cpu, Flame } from 'lucide-react'
+import birrias from '../imgs/birrias.png'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 50 },
@@ -120,7 +121,7 @@ export default function RoadToTalentLand() {
               }}
             >
               <img
-                src="/src/imgs/birrias.png"
+                src={birrias}
                 alt="Tacoin - MERGE Hackathon Project"
                 className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

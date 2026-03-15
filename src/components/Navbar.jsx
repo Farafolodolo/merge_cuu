@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react'
 import { Instagram, Twitter, Menu, X } from 'lucide-react'
+import logo from '../imgs/logo.png'
 
 const navLinks = [
   { href: '#inicio', label: 'Inicio' },
@@ -41,7 +42,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#inicio" onClick={(e) => handleNavClick(e, '#inicio')} className="flex-shrink-0">
           <img
-            src="/src/imgs/logo.png"
+            src={logo}
             alt="MERGE Logo"
             className="h-10 w-10 rounded-full object-cover"
           />
